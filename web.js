@@ -9,6 +9,8 @@ var async   = require('async')
 
 var app = express();
 app.set('views', __dirname + '/views');
+app.use('/css',express.static( __dirname + '/css'));
+app.use('/img',express.static( __dirname + '/img'));
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
 
