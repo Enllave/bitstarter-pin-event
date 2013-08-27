@@ -1,9 +1,20 @@
-/* Large desktop */
+ /* Large desktop */
+ html { background: url(/img/fondo.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+/* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/Calendar.png', sizingMethod='scale'); 
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/Calendar.png', sizingMethod='scale')"; */} 
+body {background-color:transparent;}
 
      @media (min-width: 980px) {
       body {
         padding-top: 60px;
 
+      }
+
+      .addthis_toolbox {
+      width:980px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
       }
       .linediv-l {
         border-right: 1px #072992 solid;
@@ -11,39 +22,87 @@
       .linediv-r {
         border-left: 1px #072992 solid;
        }
+
+        .copy {
+           padding: 2.5% 1%;
+           background-color: #ffffff;}
       }
 
       /* Landscape phones and down */
       @media (max-width: 480px){
         .copy {
-           padding: 2.5% 10%;
+           padding: 2.5% 1%;
+           background-color: #ffffff;
         }
-       .linediv-l {
-           border-bottom: 1px #072992 solid;
+
+        .linediv-l {
+         border-bottom: 1px white solid;
        }
        .linediv-r {
-           border-top: 1px #072992 solid;
+         border-top: 1px white solid;
        }
+
+       .addthis_toolbox {
+      width:480px;
+        margin: 0 auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+      }
       }
 
       /* All form factors */
 
       /* Main body and headings */
 
-      body{
+/*      body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 
-      }
-      .navbar-inverse1 >.navbar-inner {
+      } */
+      .container {
+	      z-index: 1; 
+/* filter:alpha(opacity=50);-moz-opacity:.50;opacity:.50;*/
+background: rgb(0,0,0,.1) transparent;
+background: rgba(255,255,255,.5);
+/* para IE 5.5 - 7*/
 
-              background-image: linear-gradient(to bottom, rgb(7, 41, 146), rgb(7, 41, 146))
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#00ffffff); 
+/* Para IE 8*/
+/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; */ 
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#00ffffff)";  
+-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.5);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.5);
+box-shadow:inset 0 1px 0 rgba(255,255,255,.5);
+}
 
-        }  
-
-
-      .heading, .subheading {
+      .heading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
+        background-color: #FFFFFF;
+
+ z-index: 2; 
+/* filter:alpha(opacity=50);-moz-opacity:.50;opacity:.50;*/
+background: rgb(0,0,0,.1) transparent;
+background: rgba(255,255,255,.8);
+/* para IE 5.5 - 7*/
+
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#00ffffff); 
+/* Para IE 8*/
+/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; */ 
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#00ffffff)";  
+-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.6);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+
+      }
+
+
+      .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+        
+       
+
+
+
       }
       p.lead {
         padding-top: 1.5%;
@@ -58,24 +117,27 @@
 
       /* Video pitch and Action */
       .pitch {
-        padding: 2.5% 0%;
+        padding: 2.5% 0% ;
+
       }
       .order {
         padding: 2% 0%;
       }
       .actions {
-        background-color: #FAEFE4;
-        padding: 3% 0%;
+        background-color: #Ffffff;
+        padding: 0% 0%;
       }
       .video, .thermometer, .order, .statistics {
         text-align: center;
+	      background-color: #Fffffff;
       }
       .social {
-	  text-align: left;
-	  }
+	        text-align: center;
+		            }
 
       .statistics h3, .statistics p {
         color:#072992;
+
       }
 
 
@@ -86,7 +148,8 @@
         text-align:justify;
       }
       .asset {
-        padding: 2.5% 0%;
+        padding: 2.5% 1% 2.5% 1%;
+        background-color: #ffffff;
       }
       .footer {
         color: #cccccc;
@@ -100,7 +163,24 @@
       }
       
       /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
-      div.addthis_toolbox {
-	  width:180px;
-	  margin: 0 auto;
+     
+    
+      .h5.right {
+      font-color:920729;
       }
+
+      
+      .twitter {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+
+
+
+
+.carousel .item > img {
+  margin:0px auto;
+  display: block;
+  line-height: 1;
+}
