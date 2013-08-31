@@ -10,9 +10,9 @@ heroku login
 heroku create
 ssh-keygen -t rsa
 heroku keys:add
-heroku addons:add heroku-postgresql:dev
-heroku pg:promote `heroku config  | grep HEROKU_POSTGRESQL | cut -f1 -d':'`
-heroku plugins:install git://github.com/ddollar/heroku-config.git
+heroku addons:add heroku-postgresql:dev --app pin-event 
+heroku pg:promote `heroku config --app pin-event | grep HEROKU_POSTGRESQL | cut -f1 -d':'` --app pin-event
+heroku plugins:install git://github.com/ddollar/heroku-config.git --app pin-event
 
 # Set up heroku configuration variables
 # https://devcenter.heroku.com/articles/config-vars
