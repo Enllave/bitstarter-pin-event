@@ -1,7 +1,7 @@
 {
-  "name": "bitstarter-ssjs-orders",
+  "name": "PIN_EVENT",
   "version": "0.0.1",
-  "description": "Simple server-side JS order processing",
+  "description": "PIN-EVENT is a tool for collecting events you love",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
