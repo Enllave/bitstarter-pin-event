@@ -1,7 +1,7 @@
 {
-  "name": "PIN_EVENT",
+  "name": "Swing Days",
   "version": "0.0.1",
-  "description": "PIN-EVENT is a tool for collecting events you love",
+  "description": "Swing Days is a tool for collecting events you love",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
